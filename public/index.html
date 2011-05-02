@@ -9,13 +9,41 @@ and open the template in the editor.
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link type="text/css" rel="stylesheet" media="screen" href="/stylesheets/custom.css?1300186954">
     <meta name="google-site-verification" content="Hidqp_g4LW8fsIl8nP27EO_RboDjGWyvzbJZqoVksA0" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        var Header = {
+                // Let's write in JSON to make it more modular
+                addFade : function(selector){
+                        $("<span class=\"fake-hover\"></span>").css("display", "none").prependTo($(selector));
+                        // Safari dislikes hide() for some reason
+                        $(selector+" a").bind("mouseenter",function(){
+                                $(selector+" .fake-hover").fadeIn("slow");
+                        });
+                        $(selector+" a").bind("mouseleave",function(){
+                                $(selector+" .fake-hover").fadeOut("slow");
+                        });
+
+                }
+        };
+
+        $(function(){
+                Header.addFade("#logo-header");
+        });
+</script>
+
   </head>
   <body>
       <div class="header" style="height: 200px;"></div>
       <div class="main" style="width: 100%; text-align: center; padding-left: 0px; padding-right: 0px;">
+          <div style="width: 301px; text-align: center; margin: auto;">
+              <h1 id="logo-header">
+              <span class="fake-hover" style="display:none;"></span>
+              <a href="#">eight across digital</a>
+              </h1>
+          </div>
           <p>
-              <img src="/images/logo_white.png" class="round" alt="eight across digital">
-              <br /><br />website coming soon.
+              website coming soon.
           </p>
       </div>
       <div class="footer" style="color:#999;">
@@ -25,6 +53,7 @@ and open the template in the editor.
           <p>
               Creative specialists across all digital media, including, web, mobile, social and much more..
           </p>
+          
       </div>
   </body>
 </html>

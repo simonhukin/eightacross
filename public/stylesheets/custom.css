@@ -186,3 +186,40 @@ th, td {
     color: #003399;
     padding: 8px;
 }
+
+
+
+
+
+#logo-header {
+	margin: 0;
+	padding: 0;
+	text-indent: -9999px;
+	width: 301px;
+	height: 115px;
+	position: relative;
+	background: url(/images/logo_hover.png) no-repeat;
+}
+#logo-header a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 301px;
+	height: 115px;
+	display: block;
+	border: 0;
+	background: transparent;
+	overflow: hidden;
+}
+#logo-header .fake-hover {
+	margin: 0;
+	padding: 0;
+	width: 301px;
+	height: 115px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(/images/logo_hover.png) no-repeat 0 -115px;
+}
+
