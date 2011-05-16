@@ -1,11 +1,16 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.4'
+gem 'rails', '3.0.7'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+
+gem 'refinerycms', '= 0.9.9.21'
+
+gem 'filters_spam', '= 0.3'
+gem 'refinerycms-inquiries', '= 1.0.0'
 
 # Use unicorn as the web server
 # gem 'unicorn'
