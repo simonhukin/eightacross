@@ -222,4 +222,7 @@ th, td {
 	left: 0;
 	background: url(/images/logo_hover.png) no-repeat 0 -115px;
 }
+#delete-me .div{
+    color: #ccc;
+}
 
