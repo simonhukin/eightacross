@@ -86,7 +86,7 @@ GEM
       activesupport (= 3.0.7)
       rake (>= 0.8.7)
       thor (~> 0.14.4)
-    rake (0.9.0)
+    rake (0.8.7)
     refinerycms (0.9.9.22)
       bundler (~> 1.0)
       refinerycms-authentication (= 0.9.9.22)
@@ -167,6 +167,7 @@ DEPENDENCIES
   filters_spam (= 0.3)
   heroku
   rails (= 3.0.7)
+  rake (!= 0.9.0)
   refinerycms (= 0.9.9.22)
   refinerycms-inquiries (= 1.0.0)
   refinerycms-theming (= 1.0.1)
