@@ -248,8 +248,13 @@ a {
         display: block;
 	color: #f0fa58 !important;
 }
-.main_nav .selected a{
+.sub_nav_menu .selected a{
         color: #a0a0a0 !important;
+        background-color: #a0a0a0 !important;
+}
+.sub_nav_menu .selected{
+        color: #a0a0a0 !important;
+        background-color: #a0a0a0 !important;
 }
 .sub_nav_menu  a:link {
 	text-decoration: none;
