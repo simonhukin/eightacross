@@ -103,11 +103,6 @@ footer so it doesn't bunch the content up*/
     clear: left;
 }
 
-section {
-  font-size: 120%;
-  color: #555
-}
-
 section h1 {
   font-size: 100%;
 }
@@ -123,17 +118,17 @@ section h1 {
 /* Links */
 
 a {
-  color: #333;
+  color: #a0a0a0;
   text-decoration: none;
 }
 
 a:hover {
-  color: #333;
+  color: #f0fa58;
   text-decoration: underline;
 }
 
 a:visited {
-  color: #333;
+  color: #a0a0a0;
 }
 
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<%= render :partial => "/shared/html_tag" %>
+  <% site_bar = render(:partial => "/shared/site_bar", :locals => {:head => true}) -%>
+  <%= render :partial => "/shared/head" %>
+  <body>
+    <%= site_bar -%>
+    <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+    <div id="page_container">
+      <div class="header_row">
+        <%= render :partial => "/shared/header" -%>
+      </div>
+      <div class="title_row">
+        <%= render :partial => "/shared/title" -%>
+      </div>
+      <div class="main_row">
+        <div class="main_container">
+          <div class="main_prop"></div>
+             <%= render :partial => "/shared/menu",
+               :locals => {
+               :dom_id => 'main_nav',
+               :css => 'main_nav',
+               :collection => @menu_pages,
+               :hide_children => true
+             } -%>
+
+              <%= yield %>
+
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="sub_nav_row">
+        <div class="sub_nav_container">
+          <div class="sub_nav_prop"></div>
+            <%= render :partial => '/shared/menu',
+               :locals => {
+               :dom_id => 'submenu',
+               :css => 'sub_menu_nav',
+               :roots => @menu_pages.reject{|p| p.parent_id != @page.root.id },
+               :collection => @menu_pages.reject{|p| !p.self_and_ancestors.map(&:id).include?(@page.root.id) },
+               :extra_suffix => 'submenu'
+             } %>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="bottom_row">
+	<div class="bottom_container">
+	<div class="bottom_prop"></div>
+	<div class="clear"></div>
+	</div>
+      </div>
+      <div class="footer_row">
+        <div class="footer_container">
+	<div class="footer_prop"></div>
+	<div class="footer_content">
+	8|across digital &copy; <%= Time.now.year %>   |   <a href="#">privacy</a>  |  <a href="#">careers</a>
+	</div>
+	<div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <%= render :partial => "/shared/javascripts" %>
+  </body>
+</html>
