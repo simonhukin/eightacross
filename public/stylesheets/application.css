@@ -288,9 +288,9 @@ a {
 	background-repeat: repeat-y;
 }
 .bottom_prop {
-    height:75px;
-    float:right;
-    width:1px;
+        height:75px;
+        float:right;
+        width:1px;
 }
 
 .footer_row {
@@ -300,10 +300,13 @@ a {
 	width: 1010px;
 	margin: 0 auto;
 }
+.footer_container a{
+        color: #333333 !important;
+}
 .footer_prop {
-    height:40px;
-    float:right;
-    width:1px;
+        height:40px;
+        float:right;
+        width:1px;
 }
 .footer_content {
 	width: 250px;
