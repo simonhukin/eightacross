@@ -9,11 +9,11 @@ gem 'sqlite3-ruby', '1.3.2', :group => :development
 
 gem "rake", "!= 0.9.0"
 
-gem 'refinerycms', '= 0.9.9.22'
+gem 'refinerycms', '= 1.0.0'
 
 gem 'filters_spam', '= 0.3'
 gem 'refinerycms-inquiries', '= 1.0.0'
-gem 'refinerycms-theming', '=1.0.1'
+#gem 'refinerycms-theming', '=1.0.1'
 
 # Use unicorn as the web server
 # gem 'unicorn'

@@ -31,13 +31,12 @@
       <div class="sub_nav_row">
         <div class="sub_nav_container">
           <div class="sub_nav_prop"></div>
-            <%= render :partial => '/shared/menu',
-               :locals => {
+          <%= render :partial => '/shared/menu',
+             :locals => {
                :dom_id => 'submenu',
-               :css => 'sub_menu_nav',
+               :css => 'sub_nav_menu',
                :roots => @menu_pages.reject{|p| p.parent_id != @page.root.id },
-               :collection => @menu_pages.reject{|p| !p.self_and_ancestors.map(&:id).include?(@page.root.id) },
-               :extra_suffix => 'submenu'
+               :collection => @menu_pages.select{|p| ([p.id] | p.ancestors.map(&:id)).include?(@page.root.id) }
              } %>
           <div class="clear"></div>
         </div>
