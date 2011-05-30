@@ -154,9 +154,7 @@ a {
 }
 #body_content_left{
     	width: 430px;
-	padding-top: 25px;
-	padding-left: 60px;
-	padding-right: 40px;
+	padding: 25px 40px 25px 60px;
 }
 .main_prop {
     height:375px;

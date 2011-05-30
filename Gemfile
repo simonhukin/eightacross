@@ -12,7 +12,7 @@ gem "rake", "!= 0.9.0"
 gem 'refinerycms', '= 1.0.0'
 
 gem 'filters_spam', '= 0.3'
-gem 'refinerycms-inquiries', '= 1.0.0'
+gem 'refinerycms-inquiries', '= 1.0.1'
 #gem 'refinerycms-theming', '=1.0.1'
 
 # Use unicorn as the web server
