@@ -15,7 +15,7 @@ body, html {
 /*Just visual styles*/
 body {
 	font: 15px/1.2 Georgia,Verdana,Arial;
-	color: #333;
+	color: #eee;
 	}
 
 /*Our full length header.
@@ -118,7 +118,7 @@ section h1 {
 /* Links */
 
 a {
-  color: #a0a0a0;
+  color: #eeeeee;
   text-decoration: none;
 }
 
@@ -128,7 +128,7 @@ a:hover {
 }
 
 a:visited {
-  color: #a0a0a0;
+  color: #eeeeee;
 }
 
 
