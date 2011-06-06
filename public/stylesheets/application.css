@@ -12,10 +12,9 @@ body {
 	font: 12px Arial;
 	color: #eeeeee;
 	font-weight: bold;
-        background-image: url(../images/main_bg_1.1.jpg);
-	background-repeat: repeat-y;
-	background-attachment: fixed;
-	background-position: center;
+        background-image: url(../images/main_bg_1.3.jpg);
+	background-repeat: repeat-x;
+	background-position: top center;
 }
 h1 {
 	font: 29px Arial;
