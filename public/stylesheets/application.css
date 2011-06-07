@@ -323,3 +323,7 @@ a {
     background-color: #eee;
 }
 
+.inquiries form input{
+        width: 260px;
+}
+
